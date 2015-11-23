@@ -14,10 +14,12 @@ setup(name='bamboo_automate',
       author_email='bitmonk@icloud.com',
       url='',
       license='Apache',
-      packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
+      packages=find_packages('src',),
+      package_dir={'':'src'},
       include_package_data=True,
       zip_safe=True,
       install_requires=[
+          'lxml',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
